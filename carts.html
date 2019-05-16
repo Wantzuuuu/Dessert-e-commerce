@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購物車</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- bootstrao css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- all.css -->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img width="220px" height="40px" src="./img/logo-all-dark.svg"
+                    alt="https://wcc723.github.io/F2E-PK/images/logo-all-dark.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link " href="./index.html">首頁 <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="./product.html">甜點</a>
+                    <a class="nav-item nav-link" href="./login.html">登入</a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- cartSection -->
+    <section class="mb-6 mb-md-0">
+        <div class="container">
+            <div class="row carts">
+                <div class="col-md-8">
+                    <div class="bg-secondary text-primary text-center w-100 cart-header">
+                        <h3 class="mb-0">您的購物車</h3>
+                    </div>
+                    <!-- cart1 -->
+                    <div class="row py-3 border-bottom border-secondary d-flex flex-column flex-md-row">
+                        <div class="col-md-9">
+                            <div class="row d-flex align-items-center">
+                                <!-- img -->
+                                <div class="col-6 col-md-3 my-4">
+                                    <div class="cart-image"
+                                        style="background-image: url(https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)">
+                                    </div>
+                                </div>
+                                <!-- img end -->
+                                <!-- card title and cardbtn -->
+                                <div class=" col-6 col-md-9">
+                                    <div class="row d-flex flex-column flex-md-row">
+                                        <div class="col-md-6 text-md-right text-lg-center">
+                                            <span class="h5 ">抹茶馬卡龍</span>
+                                            <p class="mb-0">NT$ 450</p>
+                                        </div>
+                                        <div class="col-md-6 mt-1 mt-md-0">
+                                            <div class="input-group input-group-lg  cart-control mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary text-primary" type="button"
+                                                        id="inputGroupFileAddon03">
+                                                        +
+                                                    </button>
+                                                </div>
+                                                <input type="text" class="form-control" value="1"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary text-primary" type="button"
+                                                        id="inputGroupFileAddon03">
+                                                        -
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cart title end-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-md-between justify-content-end">
+                            <span class="h4 mb-0">NT$ 900</span>
+                            <a class="mr-1 d-none d-md-inline" href="#"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- cart1 end-->
+                    <!-- cart2 -->
+                    <div class="row py-3 border-bottom border-secondary d-flex flex-column flex-md-row">
+                        <div class="col-md-9">
+                            <div class="row d-flex align-items-center">
+                                <!-- img -->
+                                <div class="col-6 col-md-3 my-4">
+                                    <div class="cart-image"
+                                        style="background-image: url(https://images.unsplash.com/photo-1489069313310-63735a4f3010?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1866&q=80)">
+                                    </div>
+                                </div>
+                                <!-- img end -->
+                                <!-- card title and cardbtn -->
+                                <div class=" col-6 col-md-9">
+                                    <div class="row d-flex flex-column flex-md-row">
+                                        <div class="col-md-6 text-md-right text-lg-center">
+                                            <span class="h5 ">抹茶馬卡龍</span>
+                                            <p class="mb-0">NT$ 450</p>
+                                        </div>
+                                        <div class="col-md-6 mt-1 mt-md-0">
+                                            <div class="input-group input-group-lg  cart-control mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary text-primary" type="button"
+                                                        id="inputGroupFileAddon03">
+                                                        +
+                                                    </button>
+                                                </div>
+                                                <input type="text" class="form-control" value="2"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary text-primary" type="button"
+                                                        id="inputGroupFileAddon03">
+                                                        -
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cart title end-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-md-between justify-content-end">
+                            <span class="h4 mb-0">NT$ 900</span>
+                            <a class="mr-1 d-none d-md-inline" href="#"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- cart2 -->
+                </div>
+                <div class="col-md-4">
+                    <div class="card checkout-box py-2 bg-primary text-white">
+                        <div class="container">
+                            <div class="card-header border-bottom border-white">
+                                <h4 class="text-center">訂單摘要</h4>
+                            </div>
+                            <div class="card-body pb-2">
+                                <div class="d-flex justify-content-between my-2">
+                                    <span>
+                                        小計
+                                    </span>
+                                    <span>
+                                        NT$ 2,700
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between my-2">
+                                    <span>
+                                        運費
+                                    </span>
+                                    <span>
+                                        NT$ 300
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between my-2">
+                                    <span class="h5">
+                                        運費
+                                    </span>
+                                    <span class="h5">
+                                        NT$ 300
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-friendly btn-block btn-lg">
+                        結帳
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- cartSectionEnd -->
+    <!-- section5 -->
+    <section class="py-5 bg-primary">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-md-5 text-center">
+                    <img width="40px" height="40px" src="https://wcc723.github.io/F2E-PK/images/logo-light.svg" alt="">
+                    <span class="text-secondary h4 ml-4 mb-0">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5 mt-3 mt-md-0">
+                    <div class="input-group input-group-lg d-flex justify-content-center">
+                        <div class="input-group-prepend">
+                            <label for="exampleInputEmail1" class="input-group-text bg-secondary border-right-0">
+                                <i class="fas fa-envelope"></i>
+                            </label>
+                            <input type="email" class="form-control bg-secondary w-100 border-left-0 rounded-0"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                            <button class="btn btn-friendly input-group-append">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section5 end-->
+    <!-- footer -->
+    <footer class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex flex-column  justify-content-between">
+                    <div>
+                        <img height="27px" src="https://wcc723.github.io/F2E-PK/images/logotype-sm-dark.svg" alt="">
+                    </div>
+                    <div>
+                        <ul class="pl-0">
+                            <li>07-1234-5678</li>
+                            <li><a href="#">sweetaste@email.com</a></li>
+                            <li>
+                                800 高雄市新興區幸福路 520 號
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-end ">
+                    <img class="d-none d-md-block" height="220px"
+                        src="https://wcc723.github.io/F2E-PK/images/sm-%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%80%8B%E5%90%83%E7%94%9C%E9%BB%9E%E7%9A%84%E5%A5%BD%E6%97%A5%E5%AD%90.svg"
+                        alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-5">
+                    <img height="32" src="https://wcc723.github.io/F2E-PK/images/ic-line@.svg" alt="">
+                    <img height="32" src="https://wcc723.github.io/F2E-PK/images/ic-facebook.svg" alt="">
+                </div>
+                <div class="col-md-5 text-md-right mt-2 mt-md-0">
+                    <span class="justify-content-end">© 2018 Sweetaste* All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

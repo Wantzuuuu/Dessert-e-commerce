@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color:#3F5D45;
+}
+ul{
+    list-style: none;
+}
+a.no-line {
+    text-decoration:none;
+}
+.bg-cover{
+    background-size:cover;
+    background-position:center center;
+}
+/* header */
+.header-img{
+background-image:url("https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5…jEyMDd9&s=ae0d68a…&auto=format&fit=crop&w=925&q=80");
+width:100%;
+height:496px;
+}
+.header-img-group{
+    margin-top:-90px;
+    width:100%;
+}
+.header-img-group .background-img{
+height:256px;
+}
+.index-1{
+    z-index:1;
+}
+.index-2{
+    z-index:2;
+}
+.index-3{
+    z-index:3;
+}
+.img-group-text{
+    color:white;
+    font-size:24px;
+    letter-spacing: 10px;
+    writing-mode: vertical-lr;
+}
+.img-group-text.active{
+    color:#3F5D45;
+}
+a.header-a-link :hover>.img-group-text{
+    color:#3F5D45;
+}
+.background-block{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgb(63, 93, 69,0.8);
+    filter:blur(10px);
+    width:100%;
+    height:100%;
+    transition:all .5s ease;
+    
+}
+a.header-a-link :hover> .background-block{
+    color:rgb(63, 93, 69,0.8);
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgb(255, 225, 127,0.8);
+    width:100%;
+    height:100%;
+    
+}
+.background-block.active{
+    color:rgb(63, 93, 69,0.8);
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgb(255, 225, 127,0.8);
+    width:100%;
+    height:100%;
+    
+}
+/* section */
+.max-height-420{
+    max-height:420px;
+}
+.negative-block{
+   margin-top:-24px;
+   margin-bottom:-24px;
+}
+@media(max-width:576px){
+    .negative-block{
+        margin-top:0px;
+        margin-bottom:0px;
+     }
+}
+.sectionPhoto-min-size{
+    min-height:250px;
+}
+@media(max-width:576px){
+    .sectionPhoto-min-size{
+        margin-left:-15px;
+        margin-right:-15px;
+    }
+}
+.title-photo{
+    margin-top:-24px;
+    margin-bottom:-24px;
+}
+@media(min-width:576px){
+    .content-vertical-rl{
+        writing-mode:vertical-rl;
+        line-height: 2.5;
+    }
+}
+#section3{
+    padding-top:105px;
+    padding-bottom:80px;
+}
+/* section4 */
+.card-photo{
+    height:315px;
+}
+.card-photo p{
+color:white;
+writing-mode: vertical-lr;
+width:36px;
+height:114px;
+line-height:36px;
+letter-spacing: 5px;
+padding:15px 0px;
+}
+
+/* =============================
+==          product.html      ==
+================================
+*/
+.product-header-img{
+    height:496px;
+    position:relative;
+}
+.product-header-photo{
+    width:89px;
+    position:absolute;
+    top:40px;
+    right:40px;
+}
+.btn-group .btn-light.inline{
+    background-color:#3F5D45;
+}
+/* .form-box{
+    height:320px;
+} */

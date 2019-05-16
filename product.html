@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>甜點類別</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- bootstrao css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- all.css -->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img width="220px" height="40px" src="./img/logo-all-dark.svg"
+                    alt="https://wcc723.github.io/F2E-PK/images/logo-all-dark.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link " href="./index.html">首頁 <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="./product.html">甜點</a>
+                    <a class="nav-item nav-link" href="./login.html">登入</a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./carts.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header class="mb-6">
+        <div class="container">
+            <div class="product-header-img bg-cover"
+                style="background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=1380&q=80)">
+                <img src="https://wcc723.github.io/F2E-PK/images/lg-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg"
+                    alt="" class="product-header-photo">
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- producListsection -->
+    <section class="mb-6">
+        <div class="container">
+            <!-- listgroup -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="list-group text-center" id="list-tab" role="tablist">
+                        <div class="h4 bg-secondary py-3 mb-0">甜點類別</div>
+                        <a class="list-group-item list-group-item-action h4 active py-3" id="list-home-list"
+                            data-toggle="list" href="#list-home" role="tab" aria-controls="home">所有甜點(48)</a>
+                        <a class="list-group-item list-group-item-action h4 py-3" id="list-profile-list"
+                            data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">本日精選(10)</a>
+                        <a class="list-group-item list-group-item-action h4 py-3" id="list-messages-list"
+                            data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">人氣推薦(26)</a>
+                        <a class="list-group-item list-group-item-action h4 py-3" id="list-settings-list"
+                            data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">新品上市(12)</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <div class="row">
+                                <!-- card1 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image:url(https://images.unsplash.com/photo-1534073737927-85f1ebff1f5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1204e5551548223af82981f0025984ef&auto=format&fit=crop&w=634&q=80);">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">焦糖馬卡龍</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card1 end -->
+                                <!-- card2 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1525059337994-6f2a1311b4d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ce5bbf66bdb4ed3b6965f0b3618aa43&auto=format&fit=crop&w=654&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">牛奶尬圈圈</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card2 end -->
+                                <!-- card3 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=1350&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">保證不烙賽</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card3 end -->
+                                <!-- card4 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1501199846642-3181f389551d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">保證不烙賽</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card4 end -->
+                                <!-- card5 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1508737804141-4c3b688e2546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">牛奶尬圈圈</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card5 end -->
+                                <!-- card6 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">牛奶尬圈圈</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card6 end -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            <div class="row">
+                                <!-- card1 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image:url(https://images.unsplash.com/photo-1534073737927-85f1ebff1f5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1204e5551548223af82981f0025984ef&auto=format&fit=crop&w=634&q=80);">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">焦糖馬卡龍</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card1 end -->
+                                <!-- card2 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1525059337994-6f2a1311b4d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ce5bbf66bdb4ed3b6965f0b3618aa43&auto=format&fit=crop&w=654&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">牛奶尬圈圈</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card2 end -->
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            <div class="row">
+                                <!-- card3 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=1350&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">保證不烙賽</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card3 end -->
+                                <!-- card4 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1501199846642-3181f389551d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">保證不烙賽</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card4 end -->
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            <div class="row">
+                                <!-- card5 -->
+                                <div class="col-md-6 mb-5">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1508737804141-4c3b688e2546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">牛奶尬圈圈</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card5 end -->
+                                <!-- card6 -->
+                                <div class="col-md-6 mb-5">
+                                    <div class="card">
+                                        <div class=" card-photo bg-cover d-flex justify-content-end"
+                                            style="background-image: url(https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)">
+                                            <div style="position:absolute; top:0; left:15px;">
+                                                <p class="bg-primary  text-center">本日精選</p>
+                                            </div>
+                                            <div class="d-inline mr-3 mt-3">
+                                                <i class="far fa-heart fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body row p-0 text-center">
+                                            <div class="col mb-0 p-3 h5 border-right border-secondary">牛奶尬圈圈</div>
+                                            <div class="col mb-0 p-3 h5">NT$ 450</div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary py-3 btn-lg btn-block text-primary">加入購物車</button>
+                                    </div>
+                                </div>
+                                <!-- card6 end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- listgroup end-->
+            <!-- btn-group -->
+            <div class="row justify-content-center">
+                <div class="btn-group btn-group-lg text-right" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-light text-primary">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-light text-white inline">1</button>
+                    <button type="button" class="btn btn-light text-primary">2</button>
+                    <button type="button" class="btn btn-light text-primary">3</button>
+                    <button type="button" class="btn btn-light text-primary">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- btn-group end-->
+        </div>
+
+    </section>
+    <!-- producListsection  end-->
+
+
+
+
+
+    <!-- section -->
+    <section class="py-5 bg-primary">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-md-5 text-center">
+                    <img width="40px" height="40px" src="https://wcc723.github.io/F2E-PK/images/logo-light.svg" alt="">
+                    <span class="text-secondary h4 ml-4 mb-0">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5 mt-3 mt-md-0">
+                    <div class="input-group input-group-lg d-flex justify-content-center">
+                        <div class="input-group-prepend">
+                            <label for="exampleInputEmail1" class="input-group-text bg-secondary border-right-0">
+                                <i class="fas fa-envelope"></i>
+                            </label>
+                            <input type="email" class="form-control bg-secondary w-100 border-left-0 rounded-0"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                            <button class="btn btn-friendly input-group-append">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end-->
+    <!-- footer -->
+    <footer class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex flex-column  justify-content-between">
+                    <div>
+                        <img height="27px" src="https://wcc723.github.io/F2E-PK/images/logotype-sm-dark.svg" alt="">
+                    </div>
+                    <div>
+                        <ul class="pl-0">
+                            <li>07-1234-5678</li>
+                            <li><a href="#">sweetaste@email.com</a></li>
+                            <li>
+                                800 高雄市新興區幸福路 520 號
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-end ">
+                    <img class="d-none d-md-block" height="220px"
+                        src="https://wcc723.github.io/F2E-PK/images/sm-%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%80%8B%E5%90%83%E7%94%9C%E9%BB%9E%E7%9A%84%E5%A5%BD%E6%97%A5%E5%AD%90.svg"
+                        alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-5">
+                    <img height="32" src="https://wcc723.github.io/F2E-PK/images/ic-line@.svg" alt="">
+                    <img height="32" src="https://wcc723.github.io/F2E-PK/images/ic-facebook.svg" alt="">
+                </div>
+                <div class="col-md-5 text-md-right mt-2 mt-md-0">
+                    <span class="justify-content-end">© 2018 Sweetaste* All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -60,7 +60,7 @@ a.header-a-link :hover>.img-group-text{
     
 }
 a.header-a-link :hover> .background-block{
-    color:rgb(63, 93, 69,0.8);
+    /* color:rgb(63, 93, 69,0.8); */
     position:absolute;
     top:0;
     left:0;
@@ -70,7 +70,7 @@ a.header-a-link :hover> .background-block{
     
 }
 .background-block.active{
-    color:rgb(63, 93, 69,0.8);
+    /* color:rgb(63, 93, 69,0.8); */
     position:absolute;
     top:0;
     left:0;

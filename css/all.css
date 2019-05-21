@@ -17,8 +17,8 @@ a.no-line {
 /* header */
 .header-img{
 background-image:url("https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5…jEyMDd9&s=ae0d68a…&auto=format&fit=crop&w=925&q=80");
-width:100%;
 height:496px;
+position:relative;
 }
 .header-img-group{
     margin-top:-90px;
@@ -26,6 +26,7 @@ height:496px;
 }
 .header-img-group .background-img{
 height:256px;
+overflow: hidden;
 }
 .index-1{
     z-index:1;
@@ -57,7 +58,15 @@ a.header-a-link :hover>.img-group-text{
     width:100%;
     height:100%;
     transition:all .5s ease;
-    
+}
+.background-bolck:after{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgb(63, 93, 69,0.8);
+    filter:blur(10px);
+    width:120%;
+    height:120%;
 }
 a.header-a-link :hover> .background-block{
     /* color:rgb(63, 93, 69,0.8); */
@@ -98,8 +107,8 @@ a.header-a-link :hover> .background-block{
 }
 @media(max-width:576px){
     .sectionPhoto-min-size{
-        margin-left:-15px;
-        margin-right:-15px;
+        margin-left:-10px;
+        margin-right:-10px;
     }
 }
 .title-photo{
@@ -120,14 +129,18 @@ a.header-a-link :hover> .background-block{
 .card-photo{
     height:315px;
 }
-.card-photo p{
-color:white;
-writing-mode: vertical-lr;
-width:36px;
-height:114px;
-line-height:36px;
-letter-spacing: 5px;
-padding:15px 0px;
+.card-photo .card-title{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-color: #3F5D45;
+    color:white;
+    writing-mode: vertical-lr;
+    width:36px;
+    height:114px;
+    line-height:36px;
+    letter-spacing: 5px;
+    padding:15px 0px;
 }
 
 /* =============================
@@ -149,4 +162,4 @@ padding:15px 0px;
 }
 /* .form-box{
     height:320px;
-} */
+} */ 

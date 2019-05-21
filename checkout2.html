@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>結帳-付款</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- bootstrao css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- all.css -->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="./index.html">
+                <img width="220px" height="40px" src="./img/logo-all-dark.svg"
+                    alt="https://wcc723.github.io/F2E-PK/images/logo-all-dark.svg" class="d-none d-md-inline">
+                <img height="18px" src="./img/logotype-sm-dark.svg" alt="" class="d-inline d-md-none">
+            </a>
+            <a class="navbar-link order-md-1 ml-md-5 mr-md-2" href="./carts.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="./index.html">首頁 <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="./product.html">甜點</a>
+                    <a class="nav-item nav-link" href="./login.html">登入</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- checkout section -->
+    <section class="mb-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ">
+                    <div class="checkout-box bg-primary w-100">
+                        <div class="container px-5">
+                            <div class="checkout-header row py-5 d-flex ">
+                                <div class="col-6">
+                                    <h2 class="text-white mb-0">付款</h2>
+                                </div>
+                                <div class="col-6 d-flex align-items-center">
+                                    <<div class="process-steps w-100 ">
+                                        <div class="step-circle material-icons ">
+                                            <i class="fas fa-check text-secondary"></i>
+                                        </div>
+                                        <div class="step-circle material-icons active"></div>
+                                        <div class="step-circle material-icons"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="text-white">
+                            <div class="form-group">
+                                <label class="h3" for="inputEmail4">信用卡卡號</label>
+                                <div class="input-group">
+                                    <input style="height:56px" type="tel" class="form-control form-control-lg py-3"
+                                        id="inputEmail4" placeholder="9012-8000-7665-8787">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text bg-light" id="basic-addon1">
+                                            <i class="far fa-credit-card"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label class="h3" for="inputEmail4">持卡人姓名</label>
+                            <div class="form-row ">
+                                <div class="form-group col-6">
+                                    <input style="height:56px" type="text" class="form-control form-control-lg py-3"
+                                        id="inputEmail4" placeholder="王">
+                                </div>
+                                <div class="form-group col-6">
+                                    <input style="height:56px" type="email" class="form-control form-control-lg py-3"
+                                        id="inputEmail4" placeholder="小明">
+                                </div>
+                            </div>
+                            <!-- 有效期限 -->
+                            <label class="h3" for="inputEmail4">有效期限</label>
+                            <div class="form-row ">
+                                <div class="form-group col-6">
+                                    <select style="height:56px" class=" form-control form-control-lg py-3" required>
+                                        <option value="">1月</option>
+                                        <option value="1">2月</option>
+                                        <option value="2">3月</option>
+                                    </select>
+                                    <div class="invalid-feedback">Example invalid custom select feedback</div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <select style="height:56px" class=" form-control form-control-lg py-3" required>
+                                        <option value="">年</option>
+                                        <option value="1">2019</option>
+                                        <option value="2">2020</option>
+                                    </select>
+                                    <div class="invalid-feedback">Example invalid custom select feedback</div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label class="h3" for="inputEmail4">卡片末三碼</label>
+                                    <input style="height:56px" type="tel" class="form-control form-control-lg py-3"
+                                        id="inputEmail4" placeholder="">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <a class="btn btn-friendly btn-block btn-lg py-3 " href="./checkout3.html">下一步</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 d-none d-md-block">
+                <!-- order-text -->
+                <div class="order-list border border-secondary">
+                    <div class="order-header bg-secondary py-3">
+                        <h3 class="text-accent text-center">訂單摘要</h3>
+                    </div>
+                    <div class="order-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>小費</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-right">
+                                        NT$ 2700
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>運費</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-right">
+                                        NT$ 300
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>總計</h4>
+                                </div>
+                                <div class="col-6">
+                                    <h4 class="text-right">
+                                        NT$ 3000
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- order-text end-->
+                <!-- order-list -->
+                <div class="order-list mt-4 border border-secondary">
+                    <div class="order-header bg-secondary py-3">
+                        <h3 class="text-accent text-center">購物清單</h3>
+                    </div>
+                    <div class="order-body">
+                        <div class="container">
+                            <div class="row py-3">
+                                <div class="col-4">
+                                    <img height="80px" width="100%"
+                                        src="https://images.unsplash.com/photo-1501199846642-3181f389551d?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                                        alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-accent m-1">焦糖馬卡龍 (2)</p>
+                                    <h4 class="text-primay mb-0">NT$900</h4>
+                                </div>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-4">
+                                    <img height="80px" width="100%"
+                                        src="https://images.unsplash.com/photo-1531361171768-37170e369163?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"
+                                        alt="">
+                                </div>
+                                <div class="col-8 ">
+                                    <p class="text-accent m-1">焦糖馬卡龍 (2)</p>
+                                    <h4 class="text-primay mb-0">NT$900</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-4">
+                                <img height="80px" width="100%"
+                                    src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=952&q=80"
+                                    alt="">
+                            </div>
+                            <div class="col-8 ">
+                                <p class="text-accent m-1">焦糖馬卡龍 (2)</p>
+                                <h4 class="text-primay mb-0">NT$900</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- order-list end-->
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- checkout section end-->
+
+    <!-- section5 -->
+    <section class="py-5 bg-primary">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-md-5 text-center">
+                    <img width="40px" height="40px" src="https://wcc723.github.io/F2E-PK/images/logo-light.svg" alt="">
+                    <span class="text-secondary h4 ml-4 mb-0">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5 mt-3 mt-md-0">
+                    <div class="input-group input-group-lg d-flex justify-content-center">
+                        <div class="input-group-prepend">
+                            <label for="exampleInputEmail1" class="input-group-text bg-secondary border-right-0">
+                                <i class="fas fa-envelope"></i>
+                            </label>
+                            <input type="email" class="form-control bg-secondary w-100 border-left-0 rounded-0"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                            <button class="btn btn-friendly input-group-append">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section5 end-->
+    <!-- footer -->
+    <footer class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex flex-column  justify-content-between">
+                    <div>
+                        <img height="27px" src="https://wcc723.github.io/F2E-PK/images/logotype-sm-dark.svg" alt="">
+                    </div>
+                    <div>
+                        <ul class="pl-0">
+                            <li>07-1234-5678</li>
+                            <li><a href="#">sweetaste@email.com</a></li>
+                            <li>
+                                800 高雄市新興區幸福路 520 號
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-end ">
+                    <img class="d-none d-md-block" height="220px"
+                        src="https://wcc723.github.io/F2E-PK/images/sm-%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%80%8B%E5%90%83%E7%94%9C%E9%BB%9E%E7%9A%84%E5%A5%BD%E6%97%A5%E5%AD%90.svg"
+                        alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-5">
+                    <img height="32" src="https://wcc723.github.io/F2E-PK/images/ic-line@.svg" alt="">
+                    <img height="32" src="https://wcc723.github.io/F2E-PK/images/ic-facebook.svg" alt="">
+                </div>
+                <div class="col-md-5 text-md-right mt-2 mt-md-0">
+                    <span class="justify-content-end">© 2018 Sweetaste* All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

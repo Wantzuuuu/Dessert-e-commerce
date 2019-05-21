@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>會員登入</title>
+    <title>結帳成功</title>
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- bootstrao css -->
@@ -42,75 +43,32 @@
         </div>
     </nav>
     <!-- navbar end -->
-    <!-- section -->
-    <section>
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-md-6 order-2 order-md-1">
-
-                    <form class="bg-primary">
-                        <div class="container px-5 py-5 form-box">
-                            <h2 class="text-center text-white py-5">會員登入</h2>
-                            <!-- email  -->
-                            <div class="input-group input-group-lg mb-3 py-2">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-secondary " id="inputGroup-sizing-lg">
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control bg-secondary" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-lg" placeholder="電子信箱/手機號碼">
-                            </div>
-                            <!-- email end -->
-                            <!-- password -->
-                            <div class="input-group input-group-lg py-5">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-secondary" id="inputGroup-sizing-lg">
-                                        <i class="fas fa-key"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control bg-secondary" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-lg" placeholder="請輸入使用者密碼">
-                            </div>
-                            <!-- password end-->
-                            <div class="form-group form-check mb-0">
-                                <input type="checkbox" class="form-check-input bg-light" id="exampleCheck1">
-                                <label class="form-check-label text-white" for="exampleCheck1">記住我</label>
-                            </div>
-                        </div>
-
-                    </form>
-                    <button type="submit" class="btn btn-lg btn-friendly btn-block " style="height:65px">登入</button>
-                </div>
-                <div class="col-md-6 p-5 bg-secondary my-md-2 order-1 order-md-2">
-                    <h2 class="h4 text-center mb-5">—— 連結社群帳號 ——</h2>
-                    <div class="row no-gutters">
-                        <div class="col-4 col-md-12 mb-md-4">
-                            <button class="btn btn-lg btn-light text-primary py-3 btn-block h-100">
-                                <img class="img-fluid" width="108px"
-                                    src="https://wcc723.github.io/F2E-PK/images/ic-facebook-logotype.svg" alt="">
-                            </button>
-                        </div>
-                        <div class="col-4 col-md-12 mb-md-4">
-                            <button class="btn btn-lg btn-light text-primary py-3 btn-block h-100">
-                                <img class="img-fluid" width="108px"
-                                    src="https://wcc723.github.io/F2E-PK/images/ic-google.svg" alt="">
-                            </button>
-                        </div>
-                        <div class="col-4 col-md-12 mb-md-4">
-                            <button class="btn btn-lg btn-light text-primary py-3 btn-block h-100">
-                                <img class="img-fluid" width="108px"
-                                    src="https://wcc723.github.io/F2E-PK/images/ic-yahoo.svg" alt="">
-                            </button>
+    <div class="container ">
+        <header class="mb-md-6">
+            <div class="product-header-img row justify-content-center d-flex align-items-center bg-cover "
+                style="background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=1347&q=80)">
+                <div class="col-md-4 col-8">
+                    <div class="mb-5 d-flex align-items-center mx-6">
+                        <div class="process-steps w-100 ">
+                            <div class="step-circle material-icons"><i class="fas fa-check text-secondary"></i></div>
+                            <div class="step-circle material-icons"><i class="fas fa-check text-secondary"></i></div>
+                            <div class="step-circle material-icons"><i class="fas fa-check text-secondary"></i></div>
                         </div>
                     </div>
+                    <h1 class="mb-7 text-center">
+                        <img height="45px"
+                            src="https://wcc723.github.io/F2E-PK/images/lg-%E4%BB%98%E6%AC%BE%E6%88%90%E5%8A%9F.svg"
+                            alt="">
+                    </h1>
+                    <a href="./product.html"
+                        class="btn btn-friendly btn-block btn-lg text-primary py-3 d-none d-md-block">繼續逛逛</a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- section end-->
+        </header>
+    </div>
+    <a href="./product.html" class="btn btn-friendly btn-block btn-lg text-primary py-3 d-block d-md-none">繼續逛逛</a>
+
     <!-- section5 -->
-    <section class="py-5 bg-primary mt-6">
+    <section class="py-5 bg-primary">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-md-5 text-center">
@@ -171,13 +129,6 @@
         </div>
     </footer>
     <!-- footer end -->
-
-
-
-
-
-
-
 
     <!-- bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

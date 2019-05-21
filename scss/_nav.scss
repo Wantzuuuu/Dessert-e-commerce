@@ -75,13 +75,19 @@
 
 .nav-pills {
   .nav-link {
+    color:$secondary;
+    @include border-radius($nav-pills-border-radius);
+  }
+  .nav-link:hover {
+    color:$primary;
+    background-color:$gray-200;
     @include border-radius($nav-pills-border-radius);
   }
 
   .nav-link.active,
   .show > .nav-link {
-    color: $nav-pills-link-active-color;
-    background-color: $nav-pills-link-active-bg;
+    color:  $primary;//$nav-pills-link-active-color;
+    background-color: $secondary//$nav-pills-link-active-bg;
   }
 }
 
